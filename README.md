@@ -17,7 +17,7 @@ For this project I decided to use Python and the Flask framework, becauseeb thos
 *Now that you have the python libraries, there is a css library Bootstrap and a js library called Jquery on the header of the html file. I incorporate them using Bootstrap CDN by including the css style sheet in the head tag of the hml file:
 ![boostrap](/bootstrap_cdn.png)
 and the bootstrap js file and jquery at the end of the body tag:
-![jquery](/jquery_boostrap.png)
+![jquery](/jquery_bootstrap.png)
 
 *Finally make sure you're in the root directory and just run this command:
   `python run.py`
