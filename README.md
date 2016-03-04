@@ -11,16 +11,20 @@ For this project I decided to use Python and the Flask framework, becauseeb thos
 * Now let's install pip using easy_install and type in your password:
   `sudo easy_install pip`
 * For this project you'll need a few libraries, to install them follow these steps: 
-  1. For *Flask* follow the instructions on their [website] (http://flask.pocoo.org/docs/0.10/installation/)
-  2. For *urllib2* on your terminal type `pip install urllib2`
-  3. For *simplejson* on your terminal type `pip install simplejson`
+ 
+  1. For **Flask** follow the instructions on their [website] (http://flask.pocoo.org/docs/0.10/installation/)
+  2. For **urllib2** on your terminal type `pip install urllib2`
+  3. For **simplejson** on your terminal type `pip install simplejson`
+
 *Now that you have the python libraries, there is a css library Bootstrap and a js library called Jquery on the header of the html file. I incorporate them using Bootstrap CDN by including the css style sheet in the head tag of the hml file:
+
 ![boostrap](/bootstrap_cdn.png)
+
 and the bootstrap js file and jquery at the end of the body tag:
+
 ![jquery](/jquery_bootstrap.png)
 
-*Finally make sure you're in the root directory and just run this command:
-  `python run.py`
-And go to [http://localhost:5000/](http://localhost:5000/)
+*Make sure you're in the root directory and just run this command `python run.py`
+*Finally go to [http://localhost:5000/](http://localhost:5000/)
 
-And donate,contribute and build!
+Now you can pick, contribute and help build!
