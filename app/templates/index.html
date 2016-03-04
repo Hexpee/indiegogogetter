@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Indiegogo template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-inverse"> 
+		<a class="navbar-brand" href="#"><font color="EB1478">Indiegogetter</font></a>
+		<form class="form-inline pull-xs-right">
+			<input class="form-control" id="filter" type="text" style="width:300px;" placeholder="Find awesome products!">
+		</form>
+	</nav>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<br></br>
+	<div class="container" style="display: flex;">
+		<div class="row">
+		{% for item in items %}
+			<div class="searchable col-lg-4" style="border-style: hidden;">
+				<img class="card-img-top" src="{{ item['image_types']['baseball_card'] }}"/>
+				<div class="card-block" style="height:300px">
+					<div  class="filtering" style="height: 50px"> <h5> {{ item['title'] }} </h5></div>
+					<br></br>
+					<div class="filtering" style="height: 100px">
+						<p class="card-text">{{ item['tagline'] }}</p>
+					</div>
+					<a href="{{item['web_url']}}" class="btn btn-primary" style="background-color: #EB1478; border-color: #EB1478; border-radius: 0;">Let's go and build this together!</a>
+				</div>
+			</div>
+		{% endfor %}
+		</div>
+	</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	(function($) {
+		var patterns = [];
+			$('#filter').keyup(function() {
+				$('.searchable').hide();
+				$(this).val().split(' ').forEach(function(r) {
+					var rex = new RegExp(r, "gi");
+					$('.searchable p, .searchable h5').filter(function() {
+						if (rex.test($(this).text())) {
+							$(this).parents().show();
+						}
+					})
+				}) 
+			})
+	}(jQuery));
+});
+
+$(document).ready(function() {
+	$('#filter').keydown(function(event) {
+		if (event.keyCode == 13) {
+			event.preventDefault();
+			return false;
+		}
+	});
+});
+</script>
