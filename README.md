@@ -6,21 +6,18 @@ For this project I decided to use Python and the Flask framework, becauseeb thos
 
 ## Instructions ##
 * First make sure you're using python 2.7.10, Macs already have python installed but just in case go [here] (https://www.python.org/downloads/mac-osx/) and find the 2.7.10 version and select the Mac Installer.
-* Go to the command line and type this:
-  python
-Your command line should look like this:
-
+* Go to the command line and type `python`, you should see the following:
+  !(/python_repl.png)
 * Now let's install pip using easy_install and type in your password:
   `sudo easy_install pip`
-  You should see this: !(python_repl.png)
 * For this project you'll need a few libraries, to install them follow these steps:
   1.For *Flask* follow the instructions on their [website] (http://flask.pocoo.org/docs/0.10/installation/)
   2.For *urllib2* on your terminal type `pip install urllib2`
   3.For *simplejson* on your terminal type `pip install simplejson`
 *Now that you have the python libraries, there is a css library Bootstrap and a js library called Jquery on the header of the html file. I incorporate them using Bootstrap CDN by including the css style sheet in the head tag of the hml file:
-!(bootstrap_cdn.png)
+!(/bootstrap_cdn.png)
 and the bootstrap js file and jquery at the end of the body tag:
-!(jquery_boostrap.png)
+!(/jquery_boostrap.png)
 
 *Finally make sure you're in the root directory and just run this command:
   `python run.py`
