@@ -15,11 +15,11 @@ Flask also has a library called Jinja2 for html templates, that let's you handle
 
 * For this project you'll need a few libraries, to install them follow these steps: 
  
-  1. For **Flask** follow the instructions on their [website]. (http://flask.pocoo.org/docs/0.10/installation/)
+  1. For **Flask** follow the instructions on their [website] (http://flask.pocoo.org/docs/0.10/installation/)
   2. For **urllib2** on your terminal type `pip install urllib2`.
   3. For **simplejson** on your terminal type `pip install simplejson`.
 
-*Now that you have the python libraries we're going to use, there is a css library Bootstrap and a js library called Jquery we will use. I incorporate them using Bootstrap CDN by including the css style sheet in the head tag of the hml file:
+*Now that you have the python libraries we're going to use, there is a css library Bootstrap and a js library called Jquery we will use. I incorporated them using Bootstrap CDN by including the css style sheet in the head tag of the hml file:
 
 ![boostrap](/bootstrap_cdn.png)
 
