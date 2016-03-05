@@ -1,7 +1,7 @@
 from app import app
 from flask import render_template
 import simplejson as json
-from urllib2 import urlopen
+from urllib import urlopen
 
 @app.route('/')
 def index():
