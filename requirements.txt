@@ -2,5 +2,4 @@ Flask==0.10.1
 Jinja2==2.8
 gunicorn==19.4.5
 simplejson == 3.0
-urllib==1.0
 psycopg2==2.6.1
