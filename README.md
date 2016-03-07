@@ -30,7 +30,7 @@ and the bootstrap js and jquery files at the end of the body tag:
 *Now, make sure you're in the root directory and just run this command `python run.py`
 *Finally go to [http://localhost:5000/](http://localhost:5000/)
 
-Now you can pick, contribute and help build better productts!
+Now you can pick, contribute and help build better products!
 
 # Views #
 ## Home ##
